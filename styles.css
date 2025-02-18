@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000; /* Черный фон */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 5px solid #fff; /* Белая полоса */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header h1 .saps {
+    color: #fff; /* Белый цвет */
+    text-shadow: 2px 2px 0 #007BFF, 4px 4px 0 #FF0000; /* Синяя и красная тень */
+}
+
+header h1 .news {
+    color: #007BFF; /* Синий цвет */
+    text-shadow: 2px 2px 0 #FF0000, 4px 4px 0 #fff; /* Красная и белая тень */
+}
+
+#news-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.news-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative; /* Для позиционирования иконки */
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.news-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.news-item .content {
+    padding: 15px;
+}
+
+.news-item h2 {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+}
+
+.news-item p {
+    margin: 0 0 10px;
+    color: #555;
+}
+
+.news-item .icon {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    color: #007BFF;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.news-item .icon:hover {
+    color: #0056b3;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    left: 25%;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    font-size: 12px;
+}
